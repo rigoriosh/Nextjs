@@ -1,5 +1,10 @@
 
-export const DarkLayout = ({children}) => {
+
+type MisProps = {
+  children: React.ReactNode; // 👈️ type children
+};
+
+export const DarkLayout = ({children}: MisProps) => {
   return (
     <div style={
         {

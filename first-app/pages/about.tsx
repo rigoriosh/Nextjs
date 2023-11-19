@@ -23,7 +23,7 @@ export default function AboutPage() {
 }
 
 //  https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts#layout-pattern
-AboutPage.getLayout = (page) => {
+AboutPage.getLayout = (page: JSX.Element[]) => {
   return (
     <MainLayout>
       <DarkLayout>

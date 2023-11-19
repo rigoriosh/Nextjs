@@ -5,8 +5,11 @@ import { Inter } from 'next/font/google'
 import { Navbar } from "../Navbar";
 
 const inter = Inter({ subsets: ['latin'] })
+type MisProps = {
+  children: React.ReactNode; // 👈️ type children
+};
 
-export const MainLayout = ({children}) => {
+export const MainLayout = ({children}: MisProps) => {
     return (
         <div className={styles.container}>
           <Head>
